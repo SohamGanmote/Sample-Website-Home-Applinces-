@@ -1,0 +1,29 @@
+.contact {
+    text-align: center;
+    width: 400px;
+    height: 380px;
+}
+
+.contact img {
+    border-radius: 50%;
+}
+
+.contact h1 {
+    font-size: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+.contact button {
+    width: 50%;
+}
+
+@media(max-width: 1450px) {
+    .contact {
+        text-align: center;
+        width: 200px;
+        height: 280px;
+    }
+}

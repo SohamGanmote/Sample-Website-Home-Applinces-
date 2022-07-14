@@ -1,0 +1,276 @@
+* {
+    font-family: 'segoe UI', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+/* Body Fix For Responsive Design */
+
+
+/* Nav Bar CSS */
+
+nav {
+    background: #4D4C7D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 90px;
+}
+
+.nav-button {
+    margin: auto 20px;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+}
+
+.nav-button:hover {
+    color: #EEB0B0;
+}
+
+.logo {
+    margin: 10px;
+    margin-left: 90px;
+    width: 100px;
+    height: 100px;
+}
+
+.active {
+    color: #EEB0B0;
+    text-decoration: underline;
+}
+
+
+/* Nav BAr End Here */
+
+
+/* Home Page Mid */
+
+.home-title {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url("../src/home-baground.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 90vh;
+}
+
+.title-h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 300px;
+    color: white;
+    text-shadow: 2px 1px 4px #555555;
+}
+
+button {
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #4D4C7D;
+    border-radius: 3px;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.3s all;
+}
+
+button:hover {
+    background-color: #404056;
+}
+
+.home-info1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.but-info1 {
+    width: 15%;
+}
+
+.home-para {
+    padding: 150px;
+}
+
+.home-para h1 {
+    margin-top: 100px;
+    margin: 30px;
+    margin-left: 0px;
+    font-size: 30px;
+}
+
+.home-para p {
+    margin-bottom: 30px;
+}
+
+.home-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-color: #EEEEEE;
+    height: 500px;
+    padding: 50px;
+    padding-top: 80px;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.card {
+    padding: 50px;
+    height: 350px;
+    background-color: white;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.32);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.32);
+}
+
+.card button {
+    margin-top: 30px;
+    width: 80%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #4D4C7D;
+    text-align: center;
+}
+
+.footer h1,
+.footer p {
+    color: white;
+    width: 300px;
+    margin: 20px;
+}
+
+.footer div {
+    margin: 30px;
+}
+
+
+/* Nav Responsive button */
+
+#but-nav-responsive {
+    display: none;
+    position: fixed;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+#but-nav-responsive img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.32);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.32);
+}
+
+
+/* Responsive CSS */
+
+@media(max-width: 1450px) {
+    /* Nav Opning Button */
+    #but-nav-responsive {
+        display: block;
+        top: 0px;
+        z-index: 1;
+    }
+    /* Nav Bar */
+    .none {
+        display: none;
+    }
+    nav {
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        top: 0px;
+        width: 90%;
+    }
+    nav img {
+        display: none;
+    }
+    .pages {
+        flex-direction: column;
+        margin: auto;
+        padding: 10px;
+    }
+    .pages div {
+        margin-bottom: 10px;
+    }
+    /* Upper Section After Nav */
+    .home-title {
+        background-size: auto;
+    }
+    /* Mid one Section */
+    .home-info1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-info1 p {
+        text-align: left;
+        padding: 10px 50px;
+    }
+    .home-info1 div {
+        margin: auto;
+        width: 90%;
+        padding: 0px;
+    }
+    .home-info1 img {
+        width: 80%;
+    }
+    /* Cards Section */
+    .home-card {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+    }
+    .card {
+        width: 50%;
+        margin: 10px auto;
+        text-align: center;
+        height: auto;
+        padding: 15px auto;
+    }
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+    .card button {
+        margin-top: 20px;
+    }
+    /* footer */
+    .footer {
+        flex-direction: column;
+        justify-content: unset;
+    }
+}
